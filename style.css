@@ -14,15 +14,6 @@ p, ul {
     color: #fff;
 }
 
-button {
-    background-color: #FE0256;
-    color: white;
-    width: 170px;
-    height: 56px;
-    border-radius: 5px;
-    border-color: transparent;
-}
-
 i {
     margin:30px;
     color: #FE0256;
@@ -31,6 +22,7 @@ i {
 i:hover {
     color: #030C45;
 }
+
 
 /* BUTTON */
 
@@ -166,23 +158,9 @@ nav a:hover {
 
 /* SECTION COMPETENCES */
 
-#competences {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
 
 /* SECTION CONTACT */
 
-#contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
 
 /* FOOTER */
 
