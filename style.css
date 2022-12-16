@@ -1,0 +1,384 @@
+/*PARAMETRES GENERAUX*/
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+    font-size: 40px;
+}
+
+.title {
+    background-color: #030C45;
+}
+
+p, ul {
+    color: #fff;
+}
+
+button {
+    background-color: #FE0256;
+    color: white;
+    width: 170px;
+    height: 56px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+i {
+    margin:30px;
+    color: #FE0256;
+}
+
+i:hover {
+    color: #030C45;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 1s, color 1s, border 1s;
+    font-size: 25px;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-full {
+    background-color: #030C45;
+    margin-right:30px;
+}
+
+.button-ghost {
+    border: 1px solid #030C45;
+}
+
+.button:hover {
+    background-color: #FE0256;
+    color: #030C45;
+    border:#FE0256
+}
+
+/*HEADER*/
+
+header {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 0, 132, 0.8),rgba(51, 0, 27, 0.9)),url(images/computer.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo {
+    width: 200px;
+}
+
+nav {
+    background-color: #030C45;
+    height:90px;
+}
+
+.nav-item {
+    font-size:20px;
+    transition: 1s;
+}
+
+nav a:hover {
+    text-shadow:
+        0 0 18px #fff,
+        0 0 30px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+        transition: 1s;
+}
+
+.home-title {
+    position: absolute;
+    font-size: 3.3em;
+    font-family: 'Satisfy', cursive;
+    color: #fff; 
+    top:20%;
+}
+
+.home-title h1 {
+    font-size: 150px;
+    letter-spacing: -1px;
+    word-spacing: 8px;
+}
+
+#linkedin {
+    color:#030C45;
+    transition: 1s;
+    font-size: 79px;
+    padding-top:14px;
+}
+
+#linkedin:hover {
+    color:#FE0256;
+    transition: 1s;
+}
+
+/* SECTION PROFIL */
+
+#photo {
+    width: 50%;
+    height:auto;
+}
+
+.profil_texte {
+    background: linear-gradient(rgb(255, 0, 132),rgb(51, 0, 27));
+    font-size: 20px;
+}
+
+/* SECTION TECHNOS */
+
+
+/* SECTION CREATIONS */
+
+#creations {
+    background: linear-gradient(rgba(255, 0, 132),rgba(51, 0, 27));
+}
+
+.image_creations {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    width: 400px;
+    margin:40px;
+    transition: 1s;
+}
+
+.image_creations img {
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    height:auto;
+}
+
+.image_creations:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/* SECTION COMPETENCES */
+
+#competences {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* SECTION CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #030C45;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+}
+
+/* RESPONSIVE */
+
+/* media queries tablette */
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        position: fixed;
+        z-index: 1;
+        width: 100vw;
+    }
+
+    a {
+        margin: auto;
+    }
+
+    #navigation {
+        background-color: #030C45;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 auto 0;
+    }
+
+    #profil {
+        padding-top: 180px;
+    }
+
+    .image_creations {
+        width: 300px;
+        margin:50px;
+    }
+}
+
+/* media queries intermédiaire bis */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #burger {
+        visibility: visible;
+        margin: auto;
+        width: 100%;
+        color: #FE0256;
+        z-index: 2;
+    }
+
+    #navigation {
+        position: absolute;
+        z-index: 2;
+    }
+
+    #navigation ul {
+        display: none;
+        width: 100vw;
+        flex-direction: column;
+        background-color: #030C45;
+    }
+
+    #navigation ul li a {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #profil {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #profil_texte {
+        width: 80%;
+        height:40ù;
+        margin:30px auto
+    }
+
+    #title {
+        width: 100%;
+        height: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #title h1 {
+        font-size: 3em;
+        margin:0;
+        padding-top: 90px;
+    }
+
+    h2 {
+        margin:auto;
+        padding:30px 0px;
+        font-size: 30px;
+    }
+
+    #profil_texte {
+        height: 20%;
+        text-align: left;
+        font-size: 15px;
+        margin:auto;
+    }
+
+    #media {
+        width: 100%;
+        height:9vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #technos, #competences {
+        margin-top: 75px;
+        flex-direction: column-reverse;
+        height: auto
+    }
+
+    #creations, #contact {
+        margin-top: 75px;
+        flex-direction: column;
+        height: auto
+    }
+
+    .title_h2 {
+        width: 100%;
+        height: auto;
+    }
+
+    #title_h2 h2 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    i {
+        margin:50px;
+        color: #FE0256;
+    }
+
+    .image_creations {
+        margin-top:30px;
+        width: 500px;
+    }
+}
+
+/* media queries téléphone */
+
+@media screen and (max-width: 576px) {
+
+    #title {
+        height:auto;
+    }
+
+    #title h1 {
+        font-size: 2.3em;
+        padding-top:0;
+    }
+
+    #profil {
+        height: auto;
+    }
+
+    #media {
+        height: auto;
+    }
+
+    #media ul {
+        flex-direction: column;
+    }
+}
+
+/*@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }*/
